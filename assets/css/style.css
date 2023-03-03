@@ -1,12 +1,58 @@
 * {
-  background-color: #222;
   margin: 0;
   padding: 0;
   font-family: cursive;
 }
 
-.container-content {
+body {
+  background-color: #222;
   color: rgb(212, 211, 211);
+}
+
+.container-navbar {
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+}
+
+.ul-navbar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-navbar {
+  height: 10px;
+  padding: 20px;
+  margin: 150px;
+  font-size: 25px;
+  font-weight: 800;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-navbar {
+  text-decoration: none;
+  color: rgb(212, 211, 211);
+}
+
+.li-navbar:hover {
+  background-color: rgb(212, 211, 211);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.a-navbar:hover {
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  color: #222;
+}
+
+.container-content {
   margin-top: 10px;
 }
 
@@ -26,7 +72,6 @@
 }
 
 .container-content {
-  color: rgb(212, 211, 211);
   margin-top: 10px;
 }
 
@@ -37,7 +82,6 @@
 }
 
 .h1-footer {
-  color: rgb(212, 211, 211);
   text-align: center;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -51,4 +95,13 @@
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 10px;
+}
+
+.playlist-container-content {
+  text-align: center;
+}
+
+.iframe-content-playlist {
+  margin-top: 10px;
+  margin-bottom: 75px;
 }
