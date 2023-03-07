@@ -25,7 +25,7 @@ body {
 .li-navbar {
   height: 10px;
   padding: 20px;
-  margin: 150px;
+  margin: 100px;
   font-size: 20px;
   font-weight: 800;
   list-style-type: none;
@@ -104,4 +104,30 @@ body {
 .iframe-content-playlist {
   margin-top: 10px;
   margin-bottom: 75px;
+}
+
+.container-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-content {
+  border: 5px white solid;
+  border-radius: 5px;
+  height: 650px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+}
+
+.img-card-content {
+  width: 100%;
+}
+
+.text-card-content {
+  width: 300px;
+  height: 252px;
+  color: black;
 }
