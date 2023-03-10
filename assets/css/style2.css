@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid Container */
+
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  height: 600px;
+  width: 400px;
+  padding: 10px;
+  border: 5px black solid;
+}
+
+.grid-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1-grid {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  background-color: aqua;
+}
+
+.box2-grid {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 2;
+  background-color: black;
+  color: white;
+}
+
+.box3-grid {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  background-color: antiquewhite;
+}
+
+.box4-grid {
+  grid-row: 2 / span 2;
+  grid-column: 3 / span 1;
+  background-color: yellow;
+}
+
+.box5-grid {
+  grid-row: 2 / span 1;
+  grid-column: 4 / span 1;
+  background-color: blue;
+  color: white;
+}
+
+.box6-grid {
+  grid-row: 4 / span 1;
+  grid-column: 3 / span 1;
+  background-color: aquamarine;
+}
+
+.box7-grid {
+  grid-row: 3 / span 2;
+  grid-column: 4 / span 1;
+  background-color: blueviolet;
+}
+
+.box8-grid {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 3;
+  background-color: salmon;
+}
+
+.box9-grid {
+  grid-row: 5 / span 1;
+  grid-column: 4 / span 1;
+  background-color: brown;
+}
+
+.box10-grid {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 4;
+  background-color: blue;
+}
+
+/* Flexbox Container */
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 400px;
+  padding: 10px;
+  border: 5px black solid;
+  align-items: baseline;
+}
+
+.flexbox-container div {
+  margin: 5px;
+}
+
+.box1-flexbox {
+  background-color: black;
+  width: 45%;
+  height: 25%;
+}
+
+.box2-flexbox {
+  background-color: blue;
+  width: 45%;
+  height: 10%;
+}
+
+.box3-flexbox {
+  background-color: yellow;
+  width: 45%;
+  height: 25%;
+}
+
+.box4-flexbox {
+  background-color: magenta;
+  width: 25%;
+  height: 45%;
+}
+
+.box5-flexbox {
+  background-color: aqua;
+  width: 25%;
+  height: 25%;
+}
+
+.box6-flexbox {
+  background-color: green;
+  width: 20%;
+  height: 20%;
+}
+
+
