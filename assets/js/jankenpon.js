@@ -1,10 +1,28 @@
-let response = prompt("Pilih 1. Gunting, 2. Kertas, dan 3. Batu");
-if (response == 1) {
-  alert("Anda Menang!");
-} else if (response == 2) {
-  alert("Anda Kalah!");
-} else if (response == 3) {
-  alert("Draw!");
-} else {
-  alert("Anda salah memasukkan angka!");
+function jankenpon() {
+  var userChoices = prompt("Pilih gunting, batu, dan kertas :");
+
+  var choices = ["gunting", "batu", "kertas"];
+  var computerChoices = choices[Math.floor(Math.random() * choices.length)];
+
+  var result;
+  if (userChoices === computerChoices) {
+    result = "Draw!";
+  } else if (
+    (userChoices == "gunting" && computerChoices == "batu") ||
+    (userChoices == "batu" && computerChoices == "kertas") ||
+    (userChoices == "kertas" && computerChoices == "gunting")
+  ) {
+    result = "Anda Kalah!";
+  } else {
+    result = "Anda Menang!";
+  }
+
+  alert(
+    "Anda memilih " +
+      userChoices +
+      "dan Musuh memilih " +
+      computerChoices +
+      ". Hasilnya adalah " +
+      result
+  );
 }
