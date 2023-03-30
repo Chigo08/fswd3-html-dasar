@@ -4,21 +4,159 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Media Queries</title>
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <title>Responsive Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/responsive2.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <img class="card-image" src="../assets/img/card-quote.jpg" alt="" />
-        <div class="card-content">
-          <h1 class="card-title">Quote of the Day!</h1>
-          <p class="card-text">
-            Every Day Is a Good Day to be ALive, Whether The Sun's Shining Or
-            Not.
-          </p>
+    <div>
+      <!-- Navigation Bar Start -->
+      <div>
+        <nav
+          class="navbar navbar-expand-lg navbar bg-primary"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Blogku</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation Bar End -->
+
+        <!-- Title Start -->
+        <div class="card text-center mb-xxl-5 bg-info-subtle">
+          <div class="card-body mb-5">
+            <h1 class="card-title"><b>BlogKu</b></h1>
+            <p class="card-text">
+              Blogku adalah blog yang berisi tentang seputar pemrograman
+            </p>
+          </div>
         </div>
       </div>
+      <!-- Title End -->
+
+      <!-- Content Start -->
+      <div class="ms-xxl-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card" style="width: 22.5rem">
+              <img
+                src="../assets/img/card-quote.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="bg-info-subtle">
+                  <p class="ms-2 align-items-center">
+                    <b>Baca Selengkapnya</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 22.5rem">
+              <img
+                src="../assets/img/card-quote.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="bg-info-subtle">
+                  <p class="ms-2 align-items-center">
+                    <b>Baca Selengkapnya</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 22.5rem">
+              <img
+                src="../assets/img/card-quote.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="bg-info-subtle">
+                  <p class="ms-2 align-items-center">
+                    <b>Baca Selengkapnya</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content End -->
+
+      <!-- Footer Start -->
+      <div class="float-sm-end mt-3">
+        <div class="card" style="width: 24rem">
+          <div class="card-body">
+            <h1 class="ms-3">Artikel</h1>
+            <h4 class="ms-3 mb-5">Artikel Seputar Website</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Belajar HTML</li>
+              <li class="list-group-item">Belajar CSS</li>
+              <li class="list-group-item">Belajar Javascript</li>
+              <li class="list-group-item">Belajar Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
     </div>
+
+    <!-- CDN Bootstrap Start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CDN Bootstrap End -->
   </body>
 </html>
